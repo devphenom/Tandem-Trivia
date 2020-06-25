@@ -13,3 +13,7 @@ jQuery(document).ready(function ($) {
     }
   });
 });
+
+submitBtn.onclick = () => {
+  errorMsg.classList.remove("d-none");
+};
