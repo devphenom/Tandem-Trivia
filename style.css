@@ -4,8 +4,8 @@ body {
 html {
   scroll-behavior: smooth;
 }
-.nav-link:hover {
-  color: #0069d9 !important;
+.min-100 {
+  min-height: 100vh;
 }
 #header {
   min-height: 100vh;
@@ -17,6 +17,9 @@ html {
 }
 .bg-phenom-grey {
   background-color: rgb(212, 212, 212);
+}
+.border-rad {
+  border-bottom: 5px solid;
 }
 .portfolio-hover {
   position: absolute;

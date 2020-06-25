@@ -44,18 +44,24 @@
 
       <!-- nav links -->
       <div id="navbarLinks" class="navbar-collapse collapse">
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item mx-2 text-uppercase">
+        <ul class="navbar-nav ml-auto" id="top-menu">
+          <li
+            class="nav-item mx-2 text-uppercase hvr-underline-from-left border-primary"
+          >
             <a href="#services" class="nav-link">Services</a>
           </li>
-          <li class="nav-item mx-2 text-uppercase">
+          <li
+            class="nav-item mx-2 text-uppercase hvr-underline-from-left border-primary"
+          >
             <a href="#portfolio" class="nav-link">Portfolio</a>
           </li>
-          <li class="nav-item mx-2 text-uppercase">
+          <li
+            class="nav-item mx-2 text-uppercase hvr-underline-from-left border-primary"
+          >
             <a href="#about" class="nav-link">About</a>
           </li>
           <li
-            class="nav-item mx-2 text-uppercase border border-primary px-2 shadow-sm hvr-float-shadow"
+            class="nav-item mx-2 text-uppercase hvr-underline-from-left border-primary"
           >
             <a href="#contact" class="nav-link">Contact</a>
           </li>
@@ -87,14 +93,14 @@
         <div class="row py-5 mx-auto">
           <div class="col-12 text-center">
             <h1 class="text-uppercase font-weight-bold">Services</h1>
-            <p>We render these services and lots more.</p>
+            <p>I render these services and lots more.</p>
           </div>
         </div>
         <div class="row py-5 mx-auto">
           <div class="col-md-4 text-center">
             <span class="fa-stack fa-4x">
               <i class="fas fa-circle fa-stack-2x text-primary"></i>
-              <i class="fas fa-shopping-cart fa-stack-1x fa-inverse"></i>
+              <i class="fas fa-laptop fa-stack-1x fa-inverse"></i>
             </span>
             <h4 class="service-heading">Web Design</h4>
             <p class="text-muted">
@@ -105,7 +111,7 @@
           <div class="col-md-4 text-center">
             <span class="fa-stack fa-4x">
               <i class="fas fa-circle fa-stack-2x text-primary"></i>
-              <i class="fas fa-laptop fa-stack-1x fa-inverse"></i>
+              <i class="fas fa-mobile-alt fa-stack-1x fa-inverse"></i>
             </span>
             <h4 class="service-heading">Responsive Design</h4>
             <p class="text-muted">
@@ -116,13 +122,13 @@
           <div class="col-md-4 text-center">
             <span class="fa-stack fa-4x">
               <i class="fas fa-circle fa-stack-2x text-primary"></i>
-              <i class="fas fa-lock fa-stack-1x fa-inverse"></i>
+              <i class="fas fa-code fa-stack-1x fa-inverse"></i>
             </span>
-            <h4 class="service-heading">Graphics Design</h4>
+            <h4 class="service-heading">Web App Development</h4>
             <p class="text-muted">
-              Deignation of branding logos, letterheads, business cards, general
-              branding for company in various formats such as SVG, PNG, CDR,
-              PSD, etc.
+              Deliver website applications codes, snippets written from scratch
+              with the various updated web app technologies in a well formatted
+              manner that makes it easy and understandable for clients.
             </p>
           </div>
         </div>
@@ -131,7 +137,7 @@
     <!-- portfolio -->
     <section id="portfolio" class="py-5 bg-light">
       <div class="container">
-        <div class="row py-5 mx-auto">
+        <div class="row mx-auto">
           <div class="col-12 text-center">
             <h1 class="text-uppercase font-weight-bold">portfolio</h1>
             <p>Here are some selected works done by me</p>
@@ -280,9 +286,9 @@
       </div>
     </section>
     <!-- about -->
-    <section id="about" class="py-3">
+    <section id="about" class="py-5 min-100">
       <div class="container">
-        <div class="row py-5 mx-auto">
+        <div class="row mx-auto">
           <div class="col-12 text-center">
             <h1 class="text-uppercase font-weight-bold">about</h1>
             <p>You really want to know more about me?</p>
@@ -399,10 +405,10 @@
         </div>
       </div>
     </section>
-    <section id="contact">
+    <section id="contact" class="py-5">
       <div class="container">
-        <div class="row py-3 mx-auto">
-          <div class="col-12 text-3center">
+        <div class="row mx-auto">
+          <div class="col-12 text-center">
             <h1 class="text-uppercase font-weight-bold hvr-float-shadow">
               contact
             </h1>
@@ -412,7 +418,7 @@
             </p>
           </div>
         </div>
-        <div class="row py-5">
+        <div class="row py-3">
           <div class="col-sm-12">
             <form action="mailto:@iphenom01@gmail.com" method="post">
               <div class="row mx-auto align-items-center">
@@ -465,14 +471,28 @@
                     Send Mail
                   </button>
                   <p
-                    class="d-none text-center texr-danger font-weight-bold"
+                    class="d-none mt-3 text-center texr-danger font-weight-bold"
                     id="errorMsg"
                   >
-                    Sorry, This service is currently not available
+                    Sorry, This service is currently not available. Use the mail
+                    icon instead. Thanks
                   </p>
                 </div>
               </div>
             </form>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col text-center">
+            <a href="https://www.facebook.com/iphenom.istargrafix" class="btn"
+              ><i class="fab fa-facebook fa-2x text-primary m-2"></i
+            ></a>
+            <a href="https://www.twitter.com/am_phenom" class="btn"
+              ><i class="fab fa-twitter fa-2x text-primary m-2"></i
+            ></a>
+            <a href="https://www.github.com/SirPhenom" class="btn"
+              ><i class="fab fa-github fa-2x text-primary m-2"></i
+            ></a>
           </div>
         </div>
       </div>
