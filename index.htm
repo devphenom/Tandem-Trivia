@@ -34,12 +34,13 @@
 
       <!-- nav toggler -->
       <button
+        id="navBtn"
         class="navbar-toggler"
         type="button"
         data-toggle="collapse"
         data-target="#navbarLinks"
       >
-        <span class="navbar-toggler-icon"></span>
+        <span id="toggler" class="navbar-toggler-icon"></span>
       </button>
 
       <!-- nav links -->
@@ -71,15 +72,19 @@
     <header id="header" class="bg-secondary py-5">
       <div class="container-fluid py-5">
         <div class="row py-5 mx-auto text-white">
-          <div class="col-12 text-center py-5">
-            <h1>Hello</h1>
-            <h2 class="display-3 text-uppercase font-weight-bold">
+          <div class="col-12 text-center py-md-5">
+            <h1 id="hello" class="animated fadeIn d-none">Hello</h1>
+            <h2
+              class="display-4 text-uppercase font-weight-bold animated fadeIn d-none"
+              id="display"
+            >
               It's nice to have you here
             </h2>
             <button
-              class="btn btn-lg shadow-sm font-weight-bold btn-primary p-3 text-uppercase"
+              id="tell-me-more"
+              class="btn btn-lg shadow-sm font-weight-bold btn-primary p-3 text-uppercase animated slideInUp d-none"
             >
-              <a href="#service" style="color: white; text-decoration: none;">
+              <a href="#services" style="color: white; text-decoration: none;">
                 tell me more
               </a>
             </button>
@@ -88,7 +93,7 @@
       </div>
     </header>
     <!-- services -->
-    <section id="services" class="py-5">
+    <section id="services" class="py-5 section">
       <div class="container">
         <div class="row py-5 mx-auto">
           <div class="col-12 text-center">
@@ -135,7 +140,7 @@
       </div>
     </section>
     <!-- portfolio -->
-    <section id="portfolio" class="py-5 bg-light">
+    <section id="portfolio" class="py-5 bg-light section">
       <div class="container">
         <div class="row mx-auto">
           <div class="col-12 text-center">
@@ -146,7 +151,12 @@
         <div class="row py-5">
           <div class="col-md-4 my-2">
             <div class="card border-0">
-              <a href="#" style="text-decoration: none;">
+              <a
+                href="#modal1"
+                data-toggle="modal"
+                data-target="#modal1"
+                style="text-decoration: none;"
+              >
                 <div class="bg-light pos-rel">
                   <img
                     src="/assets/portfolio/fashionthumb.png"
@@ -286,7 +296,7 @@
       </div>
     </section>
     <!-- about -->
-    <section id="about" class="py-5 min-100">
+    <section id="about" class="py-5 section">
       <div class="container">
         <div class="row mx-auto">
           <div class="col-12 text-center">
@@ -298,7 +308,7 @@
           <div class="col-sm-12 shadow-sm d-md-flex p-2">
             <div class="col-md-6">
               <div class="row align-items-center">
-                <div class="col-md-5 p-2">
+                <div class="col-md-5 p-2 hvr-float-shadow">
                   <img
                     src="./assets/img.jpg"
                     alt=""
@@ -306,32 +316,31 @@
                   />
                 </div>
                 <div class="col-md-7 p-2">
-                  <p>
+                  <p class="lead">
                     <span class="font-weight-bold">
                       Name:
                     </span>
                     Ali Abdulsamad Tolulope
                   </p>
-                  <p>
+                  <p class="lead">
                     <span class="font-weight-bold">
                       Nationality:
                     </span>
                     Nigerian
                   </p>
-                  <p>
+                  <p class="lead">
                     <span class="font-weight-bold">
                       Profile:
                     </span>
-                    Front-end Web Developer || Aspiring Fullstack developer ||
-                    Web Designer || Graphics Designer
+                    Front-end Web Developer || Web Designer || Graphics Designer
                   </p>
-                  <p>
+                  <p class="lead">
                     <span class="font-weight-bold">
                       Email:
                     </span>
                     aliabdulsamad15@gmail.com
                   </p>
-                  <p>
+                  <p class="lead">
                     <span class="font-weight-bold">
                       Phone:
                     </span>
@@ -405,7 +414,7 @@
         </div>
       </div>
     </section>
-    <section id="contact" class="py-5">
+    <section id="contact" class="py-5 section">
       <div class="container">
         <div class="row mx-auto">
           <div class="col-12 text-center">
@@ -497,6 +506,62 @@
         </div>
       </div>
     </section>
+
+    <!-- modals -->
+    <div class="modal fade" id="modal1">
+      <div class="modal-dialog modal-xl">
+        <div class="modal-content p-3">
+          <div class="modal-header">
+            <h3 class="modal-title text-center">FASHION LANDING PAGE</h3>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <!-- modal body -->
+          <div class="modal-body">
+            <img
+              src="/assets/portfolio/fashionfull.png"
+              alt=""
+              class="img-fluid d-block mx-auto"
+            />
+            <h5 class="text-center mt-3">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dicta,
+              rem!
+            </h5>
+            <ul class="list-inline text-center">
+              <li class="list-inline-item">
+                <a href="">
+                  <i class="fas fa-globe fa-2x"></i>
+                  <p>View Demo</p>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a href="">
+                  <i class="fab fa-github fa-2x"></i>
+                  <p>View Code</p>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <!-- modal footer -->
+          <div class="modal-footer">
+            <button
+              class="btn btn-primary btn-block"
+              data-dismiss="modal"
+              type="button"
+            >
+              <i class="fas fa-times"></i>
+              Close
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
     <!-- jQuery -->
     <script src="/js/jquery-3.4.1.min.js"></script>
     <!-- Bootstrap js -->
