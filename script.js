@@ -1,19 +1,14 @@
 // navbar color change
-jQuery(document).ready(function ($) {
-  $(window).scroll(function () {
-    var scrollPos = $(window).scrollTop(),
-      navbar = $(".navbar");
-
-    if (scrollPos > 50) {
-      navbar.removeClass("bg-transparent");
-      navbar.addClass("bg-black");
-    } else {
-      navbar.addClass("bg-transparent");
-      navbar.removeClass("bg-black");
-    }
-  });
-});
-
+var wait = (id, time) => {
+  setTimeout(function () {
+    var tellBtn = document.getElementById(id);
+    tellBtn.classList.remove("d-none");
+  }, parseInt(time));
+};
+wait("hello", 1000);
+wait("display", 2000);
+wait("tell-me-more", 2000);
+// form error message
 submitBtn.onclick = () => {
   errorMsg.classList.remove("d-none");
 };
@@ -48,6 +43,17 @@ menuItems.click(function (e) {
 
 // Bind to scroll
 $(window).scroll(function () {
+  // nav background changer
+  var scrollPos = $(window).scrollTop(),
+    navbar = $(".navbar");
+
+  if (scrollPos > 50) {
+    navbar.removeClass("bg-transparent");
+    navbar.addClass("bg-black");
+  } else {
+    navbar.addClass("bg-transparent");
+    navbar.removeClass("bg-black");
+  }
   // Get container scroll position
   var fromTop = $(this).scrollTop() + topMenuHeight;
 
@@ -73,14 +79,3 @@ $(window).scroll(function () {
       .addClass("border-rad");
   }
 });
-
-var wait = (id, time) => {
-  setTimeout(function () {
-    var tellBtn = document.getElementById(id);
-    tellBtn.classList.remove("d-none");
-  }, parseInt(time));
-};
-
-wait("hello", 1000);
-wait("display", 2000);
-wait("tell-me-more", 2000);

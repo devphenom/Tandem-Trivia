@@ -1,8 +1,8 @@
 body {
   font-family: "Source Sans Pro", sans-serif;
 }
-.min-100 {
-  min-height: 100vh;
+html {
+  scroll-behavior: smooth;
 }
 #header {
   min-height: 100vh;
