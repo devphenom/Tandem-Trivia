@@ -72,10 +72,12 @@ $(window).scroll(function () {
       .parent()
       .removeClass("active")
       .removeClass("border-rad")
+      .addClass("hvr-underline-from-left")
       .end()
       .filter("[href='#" + id + "']")
       .parent()
       .addClass("active")
-      .addClass("border-rad");
+      .addClass("border-rad")
+      .removeClass("hvr-underline-from-left");
   }
 });
