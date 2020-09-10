@@ -20,6 +20,8 @@
     <link rel="stylesheet" href="/css/hover-min.css" />
     <!-- main css-->
     <link rel="stylesheet" href="style.css" />
+    <!-- aos -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   </head>
   <body>
     <nav
@@ -27,9 +29,7 @@
     >
       <!-- logo -->
       <a href="#header" class="navbar-brand ml-md-5 text-primary"
-        ><h3>
-          Ali Abdulsamad
-        </h3>
+        ><h3>Ali Abdulsamad</h3>
       </a>
 
       <!-- nav toggler -->
@@ -80,12 +80,11 @@
             >
               It's nice to have you here
             </h2>
-            <a href="#services" style="color: white; text-decoration: none;">
+            <a href="#services" style="color: white; text-decoration: none">
               <button
                 id="tell-me-more"
                 class="btn btn-lg shadow-sm font-weight-bold btn-primary p-3 text-uppercase animated slideInUp d-none"
               >
-           
                 tell me more
               </button>
             </a>
@@ -156,15 +155,15 @@
                 href="#easybank"
                 data-toggle="modal"
                 data-target="#easybank"
-                style="text-decoration: none;"
+                style="text-decoration: none"
               >
                 <div class="bg-light pos-rel">
                   <img
                     src="/assets/portfolio/easybankthumb.png"
                     alt=""
                     class="img-fluid"
-                    />
-                    <!-- style="height: 170px;" -->
+                  />
+                  <!-- style="height: 170px;" -->
                   <div
                     class="portfolio-hover p-2 text-center hvr-rectangle-out"
                   >
@@ -185,15 +184,15 @@
                 href="#modal1"
                 data-toggle="modal"
                 data-target="#modal1"
-                style="text-decoration: none;"
+                style="text-decoration: none"
               >
                 <div class="bg-light pos-rel">
                   <img
                     src="/assets/portfolio/quizthumb.png"
                     alt=""
                     class="img-fluid"
-                    />
-                    <!-- style="height: 170px;" -->
+                  />
+                  <!-- style="height: 170px;" -->
                   <div
                     class="portfolio-hover p-2 text-center hvr-rectangle-out"
                   >
@@ -214,7 +213,7 @@
                 href="#modal2"
                 data-toggle="modal"
                 data-target="#modal2"
-                style="text-decoration: none;"
+                style="text-decoration: none"
               >
                 <div class="bg-light pos-rel">
                   <img
@@ -242,7 +241,7 @@
                 href="#modal3"
                 data-toggle="modal"
                 data-target="#modal3"
-                style="text-decoration: none;"
+                style="text-decoration: none"
               >
                 <div class="bg-light pos-rel">
                   <img
@@ -258,6 +257,7 @@
                     </span>
                   </div>
                 </div>
+                o
               </a>
               <div class="card-body text-center">
                 <p class="card-title">Fashion Ecommerce landing page</p>
@@ -265,31 +265,28 @@
             </div>
           </div>
           <div class="col-md-4 my-2 mx-auto>
-            <div class="card border-0">
-              <a
-                href="#modal4"
-                data-toggle="modal"
-                data-target="#modal4"
-                style="text-decoration: none;"
-              >
-                <div class="bg-light pos-rel">
-                  <img
-                    src="/assets/portfolio/buildXthumb.png"
-                    alt=""
-                    class="img-fluid"
-                  />
-                  <div
-                    class="portfolio-hover p-2 text-center hvr-rectangle-out"
-                  >
-                    <span class="text-white font-weight-bold">
-                      <i class="fas fa-plus fa-5x"></i>
-                    </span>
-                  </div>
+          <div class="card border-0">
+            <a
+              href="#modal4"
+              data-toggle="modal"
+              data-target="#modal4"
+              style="text-decoration: none"
+            >
+              <div class="bg-light pos-rel">
+                <img
+                  src="/assets/portfolio/buildXthumb.png"
+                  alt=""
+                  class="img-fluid"
+                />
+                <div class="portfolio-hover p-2 text-center hvr-rectangle-out">
+                  <span class="text-white font-weight-bold">
+                    <i class="fas fa-plus fa-5x"></i>
+                  </span>
                 </div>
-              </a>
-              <div class="card-body text-center">
-                <p class="card-title">BUILDX landing page</p>
               </div>
+            </a>
+            <div class="card-body text-center">
+              <p class="card-title">BUILDX landing page</p>
             </div>
           </div>
         </div>
@@ -297,18 +294,30 @@
     </section>
     <!-- about -->
     <section id="about" class="py-5 section">
-      <div class="container">
+      <div
+        class="container"
+        data-aos="fade-up"
+        data-aos-anchor-placement="top-center"
+      >
         <div class="row mx-auto">
           <div class="col-12 text-center">
             <h1 class="text-uppercase font-weight-bold">about</h1>
-            <p>Am glad you are here. Welcome once again! You'll really want to know more about me</p>
+            <p>
+              Am glad you are here. Welcome once again! You'll really want to
+              know more about me
+            </p>
           </div>
         </div>
         <div class="row py-3">
           <div class="col-sm-12 shadow-sm d-md-flex p-2">
             <div class="col-md-6">
               <div class="row align-items-center">
-                <div class="col-md-5 p-2 hvr-float-shadow">
+                <div
+                  class="col-md-5 p-2 hvr-float-shadow"
+                  data-aos="flip-right"
+                  data-aos-duration="2000"
+                  data-aos-anchor-placement="top-center"
+                >
                   <img
                     src="./assets/img.jpg"
                     alt=""
@@ -317,33 +326,23 @@
                 </div>
                 <div class="col-md-7 p-2">
                   <p class="lead">
-                    <span class="font-weight-bold">
-                      Name:
-                    </span>
+                    <span class="font-weight-bold"> Name: </span>
                     Ali Abdulsamad Tolulope
                   </p>
                   <p class="lead">
-                    <span class="font-weight-bold">
-                      Nationality:
-                    </span>
+                    <span class="font-weight-bold"> Nationality: </span>
                     Nigerian
                   </p>
                   <p class="lead">
-                    <span class="font-weight-bold">
-                      Profile:
-                    </span>
+                    <span class="font-weight-bold"> Profile: </span>
                     Front-end Web Developer || Web Designer || Graphics Designer
                   </p>
                   <p class="lead">
-                    <span class="font-weight-bold">
-                      Email:
-                    </span>
+                    <span class="font-weight-bold"> Email: </span>
                     aliabdulsamad15@gmail.com
                   </p>
                   <p class="lead">
-                    <span class="font-weight-bold">
-                      Phone:
-                    </span>
+                    <span class="font-weight-bold"> Phone: </span>
                     +234 903 456 2583
                   </p>
                 </div>
@@ -355,7 +354,7 @@
                     <p>85%</p>
                   </div>
                   <div class="progress bg-phenom-grey">
-                    <div class="progress-bar" style="width: 85%;"></div>
+                    <div class="progress-bar" style="width: 85%"></div>
                   </div>
                   <!-- progress bar2 -->
                   <div class="prog d-flex justify-content-between mt-2">
@@ -363,7 +362,7 @@
                     <p>70%</p>
                   </div>
                   <div class="progress bg-phenom-grey">
-                    <div class="progress-bar" style="width: 70%;"></div>
+                    <div class="progress-bar" style="width: 70%"></div>
                   </div>
                   <!-- progress bar3 -->
                   <div class="prog d-flex justify-content-between mt-2">
@@ -371,7 +370,7 @@
                     <p>65%</p>
                   </div>
                   <div class="progress bg-phenom-grey">
-                    <div class="progress-bar" style="width: 65%;"></div>
+                    <div class="progress-bar" style="width: 65%"></div>
                   </div>
                   <!-- progress bar4 -->
                   <div class="prog d-flex justify-content-between mt-2">
@@ -379,7 +378,7 @@
                     <p>80%</p>
                   </div>
                   <div class="progress bg-phenom-grey">
-                    <div class="progress-bar" style="width: 80%;"></div>
+                    <div class="progress-bar" style="width: 80%"></div>
                   </div>
                   <!-- progress bar5 -->
                   <!-- <div class="prog d-flex justify-content-between mt-2">
@@ -395,18 +394,23 @@
             <div class="col-md-6 ml-2">
               <h1>About Me</h1>
               <p class="lead">
-                I am <strong>Ali, Abdulsamad Tolulope</strong>. I am a Nigerian, a web designer, a front end web developer, a
-                graphics designer and a cyber security student.
+                I am <strong>Ali, Abdulsamad Tolulope</strong>. I am a Nigerian,
+                a web designer, a front end web developer, a graphics designer
+                and a cyber security student.
               </p>
               <p class="lead">
                 I have more than 2 years experience working on front end web
                 technologies, HTML, CSS3, BOOTSTRAP4, and JAVASCRIPT. I have
-                completed a series of projects with these technologies. I also have the knowledge of Git, netlify deployment, basic knowledge of NodeJS, PostgreQL and React JS, hence am an aspiring fullstack developer.
+                completed a series of projects with these technologies. I also
+                have the knowledge of Git, netlify deployment, basic knowledge
+                of NodeJS, PostgreQL and React JS, hence am an aspiring
+                fullstack developer.
               </p>
               <p class="lead">
-                In addition to my skills, I have more than 5 years experience in graphics designing with
-                CorelDraw versions, Photoshop CS, figma design and Desktop Application
-                softwares. I hope you check on them.
+                In addition to my skills, I have more than 5 years experience in
+                graphics designing with CorelDraw versions, Photoshop CS, figma
+                design and Desktop Application softwares. I hope you check on
+                them.
               </p>
               <!-- <p class="lead">
                 Still not confused about this? Then you'll want to check on my <a href="" target="_blank"> Curriculum Vitae/Resume. </a>
@@ -477,7 +481,7 @@
                     type="button"
                     id="submitBtn"
                     class="mx-auto btn btn-block btn-outline-primary text-uppercase text-dark py-3"
-                    style="font-size: 140%;"
+                    style="font-size: 140%"
                   >
                     Send Mail
                   </button>
@@ -498,7 +502,7 @@
             <a href="https://www.facebook.com/iphenom.istargrafix" class="btn"
               ><i class="fab fa-facebook fa-2x text-primary m-2 hvr-pulse"></i
             ></a>
-            <a href="https://www.twitter.com/am_phenom" class="btn"
+            <a href="https://www.twitter.com/phenomJS" class="btn"
               ><i class="fab fa-twitter fa-2x text-primary m-2 hvr-pulse"></i
             ></a>
             <a href="https://www.github.com/SirPhenom" class="btn"
@@ -506,8 +510,16 @@
             ></a>
           </div>
           <div class="col-12 text-center">
-            <p>&copy Developed by <a href="https://www.github.com/SirPhenom">Ali Abdulsamad Tolulope</a></p>
-            <div class="d-none d-md-block pos-abs  hvr-underline-from-left" style="left: 90%; bottom: 30%">
+            <p>
+              &copy Developed by
+              <a href="https://www.github.com/SirPhenom"
+                >Ali Abdulsamad Tolulope</a
+              >
+            </p>
+            <div
+              class="d-none d-md-block pos-abs hvr-underline-from-left"
+              style="left: 90%; bottom: 30%"
+            >
               <a href="#header">
                 <i class="fas fa-chevron-up fa-2x text-primary"></i>
               </a>
@@ -766,7 +778,9 @@
               class="img-fluid d-block mx-auto"
             />
             <h5 class="text-center mt-3">
-              Built with HTML, CSS and Bootstrap4. I converted the design from frontendmentors.io challenge into a functional client side landing page.
+              Built with HTML, CSS and Bootstrap4. I converted the design from
+              frontendmentors.io challenge into a functional client side landing
+              page.
             </h5>
             <ul class="list-inline text-center">
               <li class="list-inline-item">
@@ -801,6 +815,7 @@
     <script src="/js/jquery-3.4.1.min.js"></script>
     <!-- Bootstrap js -->
     <script src="/js/bootstrap.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="/script.js"></script>
   </body>
 </html>

@@ -1,3 +1,5 @@
+AOS.init();
+
 // navbar color change
 var wait = (id, time) => {
   setTimeout(function () {
