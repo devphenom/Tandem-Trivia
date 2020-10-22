@@ -1,0 +1,33 @@
+* {
+  font-family: "Josefin Sans", sans-serif;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+a {
+  text-decoration: none !important;
+  color: black !important;
+}
+.min-100 {
+  min-height: 100vh;
+}
+.underline {
+  height: 3px;
+  width: 90px;
+  background-color: black;
+}
+
+@media screen and (max-width: 425px) {
+  .display-3 {
+    font-size: 2rem !important;
+  }
+  h5 {
+    font-size: 1rem !important;
+  }
+}
+
+/* p {
+  line-height: 2rem;
+  font-size: 18px;
+} */
