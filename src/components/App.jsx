@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import Navbar from "./Navbar";
 import DarkMode from "./DarkMode";
 import Main from "./Main";
@@ -14,17 +14,20 @@ import Contact from "./Contact";
 //   duration: 800,
 // });
 
-const App = () => (
-  <div className="bg-p">
-    <React.Fragment>
-      <DarkMode />
-      <Navbar />
-      <Main />
-      <About />
-      <Portfolio />
-      <Contact />
-    </React.Fragment>
-  </div>
-);
+const App = () => {
+  const [darkmode, setdarkmode] = useState(false);
 
+  return (
+    <div className="bg-p">
+      <React.Fragment>
+        <DarkMode darkmode={darkmode} setdarkmode={setdarkmode} />
+        <Navbar />
+        <Main />
+        <About />
+        <Portfolio />
+        <Contact />
+      </React.Fragment>
+    </div>
+  );
+};
 export default App;

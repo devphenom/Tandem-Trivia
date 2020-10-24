@@ -71,7 +71,10 @@ const AboutMe = () => (
               data-aos-delay="100"
               data-aos-easing="linear"
             >
-              <i class="fab fa-html5 fa-3x text-orange" aria-hidden="true"></i>
+              <i
+                className="fab fa-html5 fa-3x text-orange"
+                aria-hidden="true"
+              ></i>
               <p className="font-weight-bold p">HTML</p>
             </div>
             <div
@@ -81,7 +84,10 @@ const AboutMe = () => (
               data-aos-delay="200"
               data-aos-easing="linear"
             >
-              <i class="fab fa-css3 fa-3x text-orange" aria-hidden="true"></i>
+              <i
+                className="fab fa-css3 fa-3x text-orange"
+                aria-hidden="true"
+              ></i>
               <p className="font-weight-bold p">CSS</p>
             </div>
             <div
@@ -92,7 +98,7 @@ const AboutMe = () => (
               data-aos-easing="linear"
             >
               <i
-                class="fab fa-js-square fa-3x text-orange"
+                className="fab fa-js-square fa-3x text-orange"
                 aria-hidden="true"
               ></i>
               <p className="font-weight-bold p">JavaScript</p>
@@ -105,7 +111,7 @@ const AboutMe = () => (
               data-aos-easing="linear"
             >
               <i
-                class="fab fa-bootstrap fa-3x text-orange"
+                className="fab fa-bootstrap fa-3x text-orange"
                 aria-hidden="true"
               ></i>
               <p className="font-weight-bold p">Bootstrap4</p>
@@ -117,7 +123,10 @@ const AboutMe = () => (
               data-aos-delay="500"
               data-aos-easing="linear"
             >
-              <i class="fab fa-react fa-3x text-orange" aria-hidden="true"></i>
+              <i
+                className="fab fa-react fa-3x text-orange"
+                aria-hidden="true"
+              ></i>
               <p className="font-weight-bold p">ReactJS</p>
             </div>
           </div>
@@ -138,7 +147,7 @@ const AboutMe = () => (
               data-aos-easing="linear"
             >
               <i
-                class="fab fa-git-alt fa-3x text-orange"
+                className="fab fa-git-alt fa-3x text-orange"
                 aria-hidden="true"
               ></i>
               <p className="font-weight-bold p">Git</p>
