@@ -18,7 +18,7 @@ const App = () => {
   const [darkmode, setdarkmode] = useState(false);
 
   return (
-    <div className="bg-p">
+    <div className={darkmode ? "bg-darK" : "bg-light"}>
       <React.Fragment>
         <DarkMode darkmode={darkmode} setdarkmode={setdarkmode} />
         <Navbar />

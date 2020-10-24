@@ -6,7 +6,7 @@ const Portfolio = () => (
       <div className="row py-5">
         <div className="col">
           <h1
-            className="display-4 font-weight-bold"
+            className="display-4 font-weight-bold headline"
             data-aos="fade-right"
             data-aos-duration="1000"
             // data-aos-delay="200"
@@ -39,7 +39,7 @@ const Portfolio = () => (
         </div>
         <div className="col-md-5 col-lg-4 mx-auto rounded">
           <h1
-            className="font-weight-bold portfolio-name py-2"
+            className="font-weight-bold portfolio-name py-2 headline"
             data-aos="fade-left"
             data-aos-duration="1000"
             data-aos-delay="200"
@@ -57,7 +57,7 @@ const Portfolio = () => (
             </span>
           </h1>
           <p
-            className="my-3"
+            className="my-3 p"
             data-aos="fade-left"
             data-aos-duration="1000"
             data-aos-delay="300"
@@ -77,7 +77,7 @@ const Portfolio = () => (
           </p>
           <div className="row justify-content-end">
             <span
-              className="px-3 py-1 rounded m-2 bg-main"
+              className="px-3 py-1 rounded m-2 bg-card"
               data-aos="fade-left"
               data-aos-duration="1000"
               data-aos-delay="600"
@@ -86,7 +86,7 @@ const Portfolio = () => (
               HTML
             </span>
             <span
-              className="px-3 py-1 rounded m-2 bg-main"
+              className="px-3 py-1 rounded m-2 bg-card"
               data-aos="fade-left"
               data-aos-duration="1000"
               data-aos-delay="500"
@@ -95,7 +95,7 @@ const Portfolio = () => (
               CSS
             </span>
             <span
-              className="px-3 py-1 rounded m-2 bg-main"
+              className="px-3 py-1 rounded m-2 bg-card"
               data-aos="fade-left"
               data-aos-duration="1000"
               data-aos-delay="400"
@@ -104,7 +104,7 @@ const Portfolio = () => (
               Bootstrap
             </span>
             <span
-              className="px-3 py-1 rounded m-2 bg-main"
+              className="px-3 py-1 rounded m-2 bg-card"
               data-aos="fade-left"
               data-aos-duration="1000"
               data-aos-delay="300"
@@ -113,7 +113,7 @@ const Portfolio = () => (
               JavaScript
             </span>
             <span
-              className="px-3 py-1 rounded m-2 bg-main"
+              className="px-3 py-1 rounded m-2 bg-card"
               data-aos="fade-left"
               data-aos-duration="1000"
               data-aos-delay="200"

@@ -15,7 +15,7 @@ const Main = () => (
       <div className="row py-md-3 min-100 align-items-center">
         <div className="col-md-10 mx-auto py-3">
           <h4
-            className=""
+            className="p"
             data-aos="zoom-in-up"
             data-aos-duration="1000"
             // data-aos-easing="linear"
