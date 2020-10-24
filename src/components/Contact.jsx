@@ -5,29 +5,10 @@ const Contact = () => (
     <div className="container">
       <div className="row py-5 align-items-center">
         <div className="col-md-6">
-          <h1
-            className="display-4 font-weight-bold headline"
-            data-aos="fade-left"
-            data-aos-duration="1000"
-            // data-aos-delay="600"
-            data-aos-easing="linear"
-          >
-            Contact Me
-          </h1>
-          <div
-            className="underline mb-4 mb-md-0"
-            data-aos="fade-right"
-            data-aos-duration="1000"
-            data-aos-easing="linear"
-          ></div>
+          <h1 className="display-4 font-weight-bold headline">Contact Me</h1>
+          <div className="underline mb-4 mb-md-0"></div>
         </div>{" "}
-        <div
-          className="col-md-5 links"
-          data-aos="fade-left"
-          data-aos-duration="1500"
-          data-aos-delay="600"
-          data-aos-easing="linear"
-        >
+        <div className="col-md-5 links">
           <a
             href="mailto:aliabdulsamad15@gmail.com"
             target="_blank"

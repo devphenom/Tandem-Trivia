@@ -101,29 +101,26 @@ const Portfolio = () => (
               data-aos-delay="400"
               data-aos-easing="linear"
             >
+              Bootstrap
+            </span>
+            <span
+              className="px-3 py-1 rounded m-2 bg-main"
+              data-aos="fade-left"
+              data-aos-duration="1000"
+              data-aos-delay="300"
+              data-aos-easing="linear"
+            >
               JavaScript
             </span>
-            {/* <i
-              class="fab fa-html5 fa-2x px-2"
+            <span
+              className="px-3 py-1 rounded m-2 bg-main"
               data-aos="fade-left"
               data-aos-duration="1000"
-              data-aos-delay="600"
+              data-aos-delay="200"
               data-aos-easing="linear"
-            ></i>
-            <i
-              class="fab fa-css3 fa-2x   px-2"
-              data-aos="fade-left"
-              data-aos-duration="1000"
-              data-aos-delay="500"
-              data-aos-easing="linear"
-            ></i>
-            <i
-              class="fab fa-bootstrap fa-2x   px-2"
-              data-aos="fade-left"
-              data-aos-duration="1000"
-              data-aos-delay="400"
-              data-aos-easing="linear"
-            ></i> */}
+            >
+              AOS
+            </span>
           </div>
         </div>
       </div>

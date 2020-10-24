@@ -1,5 +1,6 @@
 import React from "react";
 import Navbar from "./Navbar";
+import DarkMode from "./DarkMode";
 import Main from "./Main";
 import About from "./About";
 import Portfolio from "./Portfolio";
@@ -16,6 +17,7 @@ import Contact from "./Contact";
 const App = () => (
   <div className="bg-p">
     <React.Fragment>
+      <DarkMode />
       <Navbar />
       <Main />
       <About />

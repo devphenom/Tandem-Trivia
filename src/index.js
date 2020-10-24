@@ -1,6 +1,5 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import "./index.css";
 import App from "./components/App";
 import * as serviceWorker from "./serviceWorker";
 
@@ -9,6 +8,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import "aos/dist/aos";
+import "./index.css";
 AOS.init();
 
 ReactDOM.render(
