@@ -14,7 +14,7 @@ import Contact from "./Contact";
 // });
 
 const App = () => (
-  <div className="">
+  <div className="bg-p">
     <React.Fragment>
       <Navbar />
       <Main />

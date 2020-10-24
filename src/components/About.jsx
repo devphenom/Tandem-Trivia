@@ -1,12 +1,12 @@
 import React from "react";
 
 const AboutMe = () => (
-  <section id="about" className="py-3">
+  <section id="about" className="p-3">
     <div className="container">
       <div className="row">
         <div className="col">
           <h1
-            className="display-4 font-weight-bold"
+            className="display-4 font-weight-bold headline"
             data-aos="fade-left"
             data-aos-duration="1000"
             // data-aos-delay="250"
@@ -24,7 +24,7 @@ const AboutMe = () => (
         </div>{" "}
       </div>
       <div className="row py-3">
-        <div className="col-md-7 text-justify p-3">
+        <div className="col-md-7 text-justify p-3 p">
           <p
             data-aos="fade-up"
             data-aos-duration="1000"
@@ -53,17 +53,17 @@ const AboutMe = () => (
             designing with CorelDraw versions and Photoshop CS.
           </p>
         </div>
-        <div className="col-md-4 p-3 ml-auto">
+        <div className="col-md-5 col-lg-4 p-3 ml-auto">
           <h3
-            className="text-center font-weight-bold"
-            data-aos="slide-left"
+            className="text-center font-weight-bold headline"
+            data-aos="fade-left"
             data-aos-duration="1500"
             // data-aos-delay="250"
             data-aos-easing="linear"
           >
             My Stacks
           </h3>
-          <div className="row">
+          <div className="row ">
             <div
               className="text-center p-2 mx-auto"
               data-aos="fade-up"
@@ -71,8 +71,8 @@ const AboutMe = () => (
               data-aos-delay="100"
               data-aos-easing="linear"
             >
-              <i class="fab fa-html5 fa-3x text-primary" aria-hidden="true"></i>
-              <p className="font-weight-bold">HTML</p>
+              <i class="fab fa-html5 fa-3x text-orange" aria-hidden="true"></i>
+              <p className="font-weight-bold p">HTML</p>
             </div>
             <div
               className="text-center p-2 mx-auto"
@@ -81,8 +81,8 @@ const AboutMe = () => (
               data-aos-delay="200"
               data-aos-easing="linear"
             >
-              <i class="fab fa-css3 fa-3x text-primary" aria-hidden="true"></i>
-              <p className="font-weight-bold">CSS</p>
+              <i class="fab fa-css3 fa-3x text-orange" aria-hidden="true"></i>
+              <p className="font-weight-bold p">CSS</p>
             </div>
             <div
               className="text-center p-2 mx-auto"
@@ -92,10 +92,10 @@ const AboutMe = () => (
               data-aos-easing="linear"
             >
               <i
-                class="fab fa-js-square fa-3x text-primary"
+                class="fab fa-js-square fa-3x text-orange"
                 aria-hidden="true"
               ></i>
-              <p className="font-weight-bold">JavaScript</p>
+              <p className="font-weight-bold p">JavaScript</p>
             </div>
             <div
               className="text-center p-2 mx-auto"
@@ -105,10 +105,10 @@ const AboutMe = () => (
               data-aos-easing="linear"
             >
               <i
-                class="fab fa-bootstrap fa-3x text-primary"
+                class="fab fa-bootstrap fa-3x text-orange"
                 aria-hidden="true"
               ></i>
-              <p className="font-weight-bold">Bootstrap4</p>
+              <p className="font-weight-bold p">Bootstrap4</p>
             </div>
             <div
               className="text-center p-2 mx-auto"
@@ -117,12 +117,12 @@ const AboutMe = () => (
               data-aos-delay="500"
               data-aos-easing="linear"
             >
-              <i class="fab fa-react fa-3x text-primary" aria-hidden="true"></i>
-              <p className="font-weight-bold">ReactJS</p>
+              <i class="fab fa-react fa-3x text-orange" aria-hidden="true"></i>
+              <p className="font-weight-bold p">ReactJS</p>
             </div>
           </div>
           <h3
-            className="text-center font-weight-bold"
+            className="text-center font-weight-bold headline"
             data-aos="fade-right"
             data-aos-duration="1000"
             data-aos-easing="linear"
@@ -138,10 +138,10 @@ const AboutMe = () => (
               data-aos-easing="linear"
             >
               <i
-                class="fab fa-git-alt fa-3x text-primary"
+                class="fab fa-git-alt fa-3x text-orange"
                 aria-hidden="true"
               ></i>
-              <p className="font-weight-bold">Git</p>
+              <p className="font-weight-bold p">Git</p>
             </div>
           </div>
         </div>

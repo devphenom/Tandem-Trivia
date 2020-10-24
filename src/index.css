@@ -5,25 +5,73 @@
 html {
   scroll-behavior: smooth;
 }
+.bg-p {
+  background-color: #eff0f3;
+}
+.headline {
+  color: #0d0d0d;
+}
+.p {
+  color: #0d0d0d;
+}
+.btn-orange {
+  background-color: #ff8e3c !important;
+  color: #0d0d0d !important;
+}
+.text-orange {
+  color: #ff8e3c;
+}
+.bg-main {
+  background-color: #ff8e3c;
+  color: #eff0f3;
+}
+/* .bg-portcard {
+  background-color: #fffffe;
+} */
+.btn-outline-orange {
+  border: 1px solid #ff8e3c !important;
+  color: #0d0d0d !important;
+}
 a {
   text-decoration: none !important;
-  color: black !important;
+  color: #ff8e3c !important;
+}
+.portimg {
+  border: 2px solid #ff8e3c;
+  border-radius: 20px;
+  background-color: white;
+  cursor: pointer;
+  opacity: 1 !important;
+  min-height: 150px !important;
+}
+.portimg:hover {
+  opacity: 0.5 !important;
 }
 .min-100 {
-  min-height: 100vh;
+  min-height: 100vh !important;
 }
 .underline {
   height: 3px;
   width: 90px;
-  background-color: black;
+  background-color: #ff8e3c;
 }
-
+@media screen and (min-width: 425px) {
+  .portimg {
+    min-height: 400px !important;
+  }
+}
 @media screen and (max-width: 425px) {
   .display-3 {
     font-size: 2rem !important;
   }
+  .display-4 {
+    font-size: 2.2rem !important;
+  }
   h5 {
     font-size: 1rem !important;
+  }
+  .portfolio-name {
+    font-size: 2rem !important;
   }
 }
 

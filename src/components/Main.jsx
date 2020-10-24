@@ -1,16 +1,16 @@
 import React from "react";
 
-import anime from "animejs/lib/anime.es.js";
+// import anime from "animejs/lib/anime.es.js";
 
-anime({
-  targets: ".name",
-  translateX: 250,
-  duration: 2000,
-  loop: 3,
-});
+// anime({
+//   targets: ".name",
+//   translateX: 250,
+//   duration: 2000,
+//   loop: 3,
+// });
 
 const Main = () => (
-  <div id="main" className="py-3 py-md-5">
+  <div id="main" className="py-3 px-3 py-md-5">
     <div className="container">
       <div className="row py-md-3 min-100 align-items-center">
         <div className="col-md-10 mx-auto py-3">
@@ -28,7 +28,7 @@ const Main = () => (
             I'm <br />
           </h4>
           <h1
-            className="display-3 font-weight-bold"
+            className="display-3 font-weight-bold headline"
             data-aos="zoom-in-up"
             data-aos-duration="1000"
             data-aos-delay="200"
@@ -37,7 +37,7 @@ const Main = () => (
             <strong> Ali Abdulsamad Tolulope</strong>
           </h1>
           <h5
-            className="py-3 text-justify"
+            className="py-3 text-justify p"
             data-aos="zoom-in-up"
             data-aos-duration="1000"
             data-aos-delay="250"
@@ -50,7 +50,7 @@ const Main = () => (
           </h5>
           <a href="mailto:aliabdulsamad15@gmail.com">
             <button
-              className="btn btn-lg btn-primary px-3 px-md-5 py-2 py-md-3 font-weight-bold my-2 mr-2 hvr-hollow"
+              className="btn btn-lg btn-orange px-3 px-md-5 py-2 py-md-3 font-weight-bold my-2 mr-2"
               data-aos="fade-up"
               data-aos-duration="800"
               // data-aos-delay="250"
@@ -61,7 +61,7 @@ const Main = () => (
           </a>
           <a href="#contact">
             <button
-              className="btn btn-lg btn-outline-primary px-3 px-md-5 py-2 py-md-3  font-weight-bold my-2 mr-2"
+              className="btn btn-lg btn-outline-orange px-3 px-md-5 py-2 py-md-3  font-weight-bold my-2 mr-2"
               data-aos="fade-up"
               data-aos-duration="1000"
               data-aos-delay="250"
