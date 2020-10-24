@@ -82,6 +82,10 @@ a {
 #scrollUp:hover {
   opacity: 1;
 }
+.icon {
+  width: 48px;
+  height: 48px;
+}
 
 @media screen and (min-width: 425px) {
   .portimg {

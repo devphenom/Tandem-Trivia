@@ -147,10 +147,39 @@ const AboutMe = () => (
               data-aos-easing="linear"
             >
               <i
-                className="fab fa-git-alt fa-3x text-orange"
+                className="fab fa-git-alt fa-3x"
+                style={{ color: "#f34f29" }}
                 aria-hidden="true"
               ></i>
               <p className="font-weight-bold p">Git</p>
+            </div>
+            <div
+              className="text-center p-2 mx-auto"
+              data-aos="fade-up"
+              data-aos-duration="1000"
+              data-aos-delay="600"
+              data-aos-easing="linear"
+            >
+              <img
+                src={require("../imgs/netlify.png")}
+                className="img-fluid icon"
+                alt=""
+              />
+              <p className="font-weight-bold p">Netlify</p>
+            </div>
+            <div
+              className="text-center p-2 mx-auto"
+              data-aos="fade-up"
+              data-aos-duration="1000"
+              data-aos-delay="600"
+              data-aos-easing="linear"
+            >
+              <img
+                src={require("../imgs/vercel.png")}
+                className="img-fluid icon"
+                alt=""
+              />
+              <p className="font-weight-bold p">Vercel</p>
             </div>
           </div>
         </div>
