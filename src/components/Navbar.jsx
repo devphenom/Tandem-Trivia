@@ -1,29 +1,60 @@
-import React, { Component } from "react";
+import React, { useState } from "react";
 // import { Link } from "react-router-dom";
-
-class Navbar extends Component {
-  render() {
-    return (
-      <nav className="navbar navbar-expand-sm navbar-light bg-navbar shadow-sm px-lg-3 scrolling-navbar">
-        {/* <div className="ml-auto">
-          <span className="btn" onClick={this.props.handleModeChange}>
-            {this.props.darkMode ? (
-              <span>
-                <i className="far fa-sun"></i>
-                <span className="d-none d-md-inline-block pl-2">
-                  Light Mode
-                </span>
-              </span>
-            ) : (
-              <span>
-                <i className="far fa-moon"></i>
-                <span className="d-none d-md-inline-block pl-2">Dark Mode</span>
-              </span>
-            )}
-          </span>
-        </div> */}
-      </nav>
-    );
-  }
-}
+// $(".navbar-toggler").on("click", function () {
+//   $(".animated-icon3").toggleClass("open");
+// });
+const Navbar = () => {
+  const [navtoggler, setnavtoggler] = useState(false);
+  return (
+    <nav className="navbar navbar-expand-sm navbar-light shadow-md-sm px-lg-3 scrolling-navbar">
+      <div
+        className="navbar-toggler p-2 ml-auto navbar-btn"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarLinks"
+        aria-controls="navbarLinks"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+        onClick={() => setnavtoggler(!navtoggler)}
+      >
+        <div className={`animated-icon3 ${navtoggler ? "open" : ""}`}>
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+      {/* <!-- nav links --> */}
+      <div id="navbarLinks" className="navbar-collapse collapse text-center">
+        <ul className="navbar-nav ml-auto">
+          <li className="nav-item mx-2 active">
+            <a href="#about" className="nav-link">
+              About
+            </a>
+          </li>
+          <li className="nav-item mx-2">
+            <a href="#portfolio" className="nav-link">
+              Portfolio
+            </a>
+          </li>
+          <li className="nav-item mx-2">
+            <a href="#contact" className="nav-link">
+              Contact
+            </a>
+          </li>
+          <li className="nav-item mx-2 btn-outline-orange rounded px-2">
+            <a
+              href="https://docs.google.com/document/d/1RbTUo6HLuRtAl-BcbucS3L5E1soykJau_Cigg9BIFds/"
+              className="nav-link  "
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Resume
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div className="sticky-navbar bg-light"></div>
+    </nav>
+  );
+};
 export default Navbar;

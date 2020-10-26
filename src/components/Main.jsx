@@ -10,10 +10,10 @@ import React from "react";
 // });
 
 const Main = () => (
-  <div id="main" className="py-3 px-3 py-md-5">
+  <div id="main" className="py-md-3 px-3 py-md-5">
     <div className="container">
       <div className="row py-md-3 min-100 align-items-center">
-        <div className="col-md-10 mx-auto py-3">
+        <div className="col-md-10 mx-auto py-md-3">
           <h4
             className="p"
             data-aos="zoom-in-up"

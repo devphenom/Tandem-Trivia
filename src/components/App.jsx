@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import Navbar from "./Navbar";
+// import Navbar from "./Navbar";
 import DarkMode from "./DarkMode";
 import Main from "./Main";
 import About from "./About";
@@ -21,7 +21,7 @@ const App = () => {
     <div className={darkmode ? "bg-darK" : "bg-light"}>
       <React.Fragment>
         <DarkMode darkmode={darkmode} setdarkmode={setdarkmode} />
-        <Navbar />
+        {/* <Navbar /> */}
         <Main />
         <About />
         <Portfolio />
