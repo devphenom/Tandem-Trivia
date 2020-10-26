@@ -8,7 +8,7 @@ export const PortCard = (props) => (
 );
 export const PortName = (props) => (
   <h1
-    className="font-weight-bold portfolio-name py-2 headline"
+    className="font-weight-bold portfolio-name py-2 pt-3 headline"
     data-aos={props.aos.name}
     data-aos-duration={props.aos.duration}
     data-aos-delay={props.aos.delay}
@@ -59,13 +59,9 @@ export const PortImageContainer = (props) => (
     data-aos-delay={props.aos.delay}
     data-aos-easing={props.aos.easing}
   >
-    <div
-      className={`row portimg ${props.className} mx-3 mx-md-0 text-center align-items-center`}
-    >
-      {props.children}
-    </div>
+    {props.children}
   </a>
 );
 export const PortImage = (props) => (
-  <img src={props.img} alt="" className="img-fluid" />
+  <img src={props.img} alt="" className="img-fluid portimg" />
 );

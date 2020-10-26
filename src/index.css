@@ -72,12 +72,14 @@ a {
 }
 .covidimg {
   background-color: #e7e7e7;
+  border-radius: 20px;
 }
 #easybankimg {
   background-color: white;
 }
 .countryimg {
   background-color: white;
+  border-radius: 20px;
 }
 #scrollUp {
   position: fixed;
