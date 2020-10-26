@@ -1,5 +1,6 @@
 import React, { useState } from "react";
-// import Navbar from "./Navbar";
+import Navbar from "./Navbar";
+import MobileNav from "./MobileNav";
 import DarkMode from "./DarkMode";
 import Main from "./Main";
 import About from "./About";
@@ -16,12 +17,20 @@ import Contact from "./Contact";
 
 const App = () => {
   const [darkmode, setdarkmode] = useState(false);
+  const [mobileNav, setmobileNav] = useState(false);
+
+  const toggleMobileNav = () => setmobileNav(!mobileNav);
 
   return (
     <div className={darkmode ? "bg-darK" : "bg-light"}>
       <React.Fragment>
         <DarkMode darkmode={darkmode} setdarkmode={setdarkmode} />
-        {/* <Navbar /> */}
+        <Navbar toggleMobileNav={toggleMobileNav} mobileNav={mobileNav} />
+        <MobileNav
+          toggleMobileNav={toggleMobileNav}
+          mobileNav={mobileNav}
+          darkmode={darkmode}
+        />
         <Main />
         <About />
         <Portfolio />

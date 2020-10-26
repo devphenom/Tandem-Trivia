@@ -234,9 +234,16 @@ const Portfolio = () => (
               easing: "linear",
             }}
           >
-            Built with HTML, CSS and Bootstrap4. I converted the design from
-            frontendmentors.io challenge into a functional client side landing
-            page.
+            Design from{" "}
+            <a
+              href="https://frontendmentor.io"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              frontendmentor
+            </a>{" "}
+            challenge. A functional client side landing page for a bank web
+            application.
           </PortText>
           <PortTagContainer>
             <PortTag
@@ -246,7 +253,7 @@ const Portfolio = () => (
                 delay: "300",
                 easing: "linear",
               }}
-              name="React JS"
+              name="HTML/CSS"
             />
             <PortTag
               aos={{
@@ -255,7 +262,7 @@ const Portfolio = () => (
                 delay: "200",
                 easing: "linear",
               }}
-              name="Rest API"
+              name="Bootstrap"
             />
             <PortTag
               aos={{
@@ -264,7 +271,7 @@ const Portfolio = () => (
                 delay: "200",
                 easing: "linear",
               }}
-              name="Dark Mode"
+              name="AOS"
             />
           </PortTagContainer>
         </PortCard>

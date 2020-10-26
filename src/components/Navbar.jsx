@@ -1,23 +1,24 @@
-import React, { useState } from "react";
+import React from "react";
 // import { Link } from "react-router-dom";
 // $(".navbar-toggler").on("click", function () {
 //   $(".animated-icon3").toggleClass("open");
 // });
-const Navbar = () => {
-  const [navtoggler, setnavtoggler] = useState(false);
+const Navbar = ({ toggleMobileNav, mobileNav }) => {
+  // const [navtoggler, setnavtoggler] = useState(false);
   return (
     <nav className="navbar navbar-expand-sm navbar-light shadow-md-sm px-lg-3 scrolling-navbar">
       <div
-        className="navbar-toggler p-2 ml-auto navbar-btn"
+        className="navbar-toggler p-2 ml-auto navbar-btn border-0"
         type="button"
         data-toggle="collapse"
         data-target="#navbarLinks"
         aria-controls="navbarLinks"
         aria-expanded="false"
         aria-label="Toggle navigation"
-        onClick={() => setnavtoggler(!navtoggler)}
+        onClick={toggleMobileNav}
+        // onClick={() => props.setdarkmode(!props.darkmode)}
       >
-        <div className={`animated-icon3 ${navtoggler ? "open" : ""}`}>
+        <div className={`animated-icon3 ${mobileNav ? "open" : ""}`}>
           <span></span>
           <span></span>
           <span></span>
@@ -53,7 +54,6 @@ const Navbar = () => {
           </li>
         </ul>
       </div>
-      <div className="sticky-navbar bg-light"></div>
     </nav>
   );
 };

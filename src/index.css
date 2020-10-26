@@ -33,14 +33,15 @@ a {
 .p {
   color: #0d0d0d;
 }
-.bg-darK .p {
-  color: #a7a9be;
-}
-
 .btn-orange {
   background-color: #ff8e3c !important;
   color: #0d0d0d !important;
 }
+/* DARK MODE */
+.bg-darK .p {
+  color: #a7a9be;
+}
+
 .bg-darK .btn-orange {
   background-color: #ff8e3c !important;
   color: #fffffe !important;
@@ -60,6 +61,19 @@ a {
   border: 1px solid #ff8e3c !important;
   color: #fffffe !important;
 }
+#scrollUp {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 99999999;
+  opacity: 0.5;
+  cursor: pointer;
+}
+#scrollUp:hover {
+  opacity: 1;
+}
+
+/* PORTFOLIO */
 .portimg {
   border: 2px solid #ff8e3c;
   border-radius: 20px;
@@ -70,28 +84,8 @@ a {
 .portimg:hover {
   opacity: 0.5 !important;
 }
-.covidimg {
-  background-color: #e7e7e7;
-  border-radius: 20px;
-}
-#easybankimg {
-  background-color: white;
-}
-.countryimg {
-  background-color: white;
-  border-radius: 20px;
-}
-#scrollUp {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  z-index: 99;
-  opacity: 0.5;
-  cursor: pointer;
-}
-#scrollUp:hover {
-  opacity: 1;
-}
+
+/* ABOUT */
 .icon {
   width: 48px;
   height: 48px;
@@ -100,13 +94,9 @@ a {
 /* NAVBAR */
 /* toggle icon on small screen changes */
 
-/* .navbar-btn {
-  position: fixed;
-  top: 20px;
-  right: 20px;
-  z-index: 99;
-  cursor: pointer;
-} */
+.navbar-toggler {
+  z-index: 99999999 !important;
+}
 .animated-icon3 {
   width: 30px;
   height: 20px;
@@ -189,6 +179,29 @@ a {
   left: 8px;
 }
 
+/* MOBILE NAV */
+#mobilenav {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  height: 100vh;
+  width: 100vw;
+  margin-left: -100vw;
+  z-index: 999999;
+  transition: 0.8s;
+}
+#mobilenav.active {
+  margin: 0;
+}
+
+#mobilenav ul li {
+  list-style-type: none;
+  font-size: 2rem;
+}
+
+/* RESPONSIVENESS */
 @media screen and (min-width: 425px) {
   .portimg {
     min-height: 400px !important;
