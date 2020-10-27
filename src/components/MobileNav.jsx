@@ -32,7 +32,7 @@ const MobileNav = ({ toggleMobileNav, mobileNav, darkmode }) => {
             </li>
             <li className="nav-item btn-outline-orange rounded">
               <a
-                href="https://docs.google.com/document/d/1RbTUo6HLuRtAl-BcbucS3L5E1soykJau_Cigg9BIFds/"
+                href="https://docs.google.com/document/d/1RbTUo6HLuRtAl-BcbucS3L5E1soykJau_Cigg9BIFds/edit?usp=sharing"
                 className="nav-link"
                 onClick={toggleMobileNav}
                 target="_blank"
