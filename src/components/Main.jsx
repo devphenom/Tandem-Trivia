@@ -70,7 +70,7 @@ const Main = ({
         </div>
         <div className={`row text-trivia ${gameOver ? "d-block" : "d-none"}`}>
           <div className="col-md-8 mx-auto text-center font-weight-bold">
-            <h2>{`${score === 10 ? "HUrray!!!" : "Welldone!!!"} `}</h2>
+            <h2>{`${score === 10 ? "Hurray!!!" : "Welldone!!!"} `}</h2>
             <h4>
               You've come to the end of this Trivia section.{" "}
               {`You score ${score} out of 10`}
