@@ -1,4 +1,4 @@
-[![Netlify Status](https://api.netlify.com/api/v1/badges/9ad792f1-dd84-44ba-8d6b-f2e0fb921f78/deploy-status)](https://app.netlify.com/sites/tandemtrivia/deploys)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/07c3c81d-9f8f-4db6-a9fb-cfa8baba4481/deploy-status)](https://app.netlify.com/sites/tandemtrivia/deploys)
 
 # Tandem Trivia
 
