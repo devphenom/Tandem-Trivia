@@ -1,4 +1,4 @@
-import preload from "./Apprentice_TandemFor400_Data.json";
+import preload from "../utils/Apprentice_TandemFor400_Data.json";
 
 // function adds the correct answer to the array of incorrect randomly
 export const updateAnswers = (incorrect, correct) => {
@@ -17,8 +17,7 @@ export const getRandom = (arr, n) => {
   let result = new Array(n),
     len = arr.length,
     taken = new Array(len);
-  if (n > len)
-    throw new RangeError("getRandom: more elements taken than available");
+  if (n > len) throw new RangeError("getRandom: more elements taken than available");
   while (n--) {
     let x = Math.floor(Math.random() * len);
     result[n] = arr[x in taken ? taken[x] : x];

@@ -3,12 +3,7 @@ import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
 import Homepage from "./components/Homepage";
 import Main from "./components/Main";
-import {
-  getRandom,
-  questions,
-  setTimer,
-  clearTimer,
-} from "./components/Functions";
+import { getRandom, questions, setTimer, clearTimer } from "./utils/functions";
 import "./App.css";
 
 const App = () => {
